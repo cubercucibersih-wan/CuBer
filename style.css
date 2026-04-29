@@ -317,64 +317,106 @@ h1 {
   .btn { width: 100%; }
 }
 
-
-/* Testimoni Pelanggan */
-.testimoni-section {
-  padding-top: 40px;
+/* Media Sosial */
+.section-heading.centered {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.testimoni-grid {
+.social-section {
+  padding-top: 76px;
+  padding-bottom: 82px;
+}
+
+.social-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.social-card {
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
   gap: 22px;
-}
-
-.testimoni-card {
+  justify-content: space-between;
   background: white;
-  border-radius: 28px;
-  overflow: hidden;
-  box-shadow: 0 18px 44px rgba(8, 67, 120, 0.08);
+  border-radius: 30px;
+  padding: 26px;
   border: 1px solid rgba(11, 116, 209, 0.08);
-  transition: 0.2s ease;
+  box-shadow: 0 18px 44px rgba(8, 67, 120, 0.08);
+  transition: 0.22s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.testimoni-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 24px 54px rgba(8, 67, 120, 0.13);
+.social-card::after {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  right: -58px;
+  top: -58px;
+  border-radius: 999px;
+  background: rgba(39, 199, 121, 0.14);
 }
 
-.testimoni-card img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  display: block;
-  background: #eefaff;
+.social-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 54px rgba(8, 67, 120, 0.14);
 }
 
-.testimoni-card div {
-  padding: 22px;
+.social-icon {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--green), var(--blue));
+  position: relative;
+  z-index: 1;
 }
 
-.testimoni-card h3 {
+.social-card h3 {
   color: var(--blue-dark);
-  font-size: 1.18rem;
-  margin-bottom: 10px;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
 }
 
-.testimoni-card p {
+.social-card p {
   color: var(--muted);
   margin: 0;
   font-size: 0.98rem;
 }
 
-@media (max-width: 860px) {
-  .testimoni-grid {
+.footer-socials {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.footer-socials a {
+  color: white;
+  font-weight: 900;
+  background: rgba(255,255,255,0.12);
+  padding: 9px 14px;
+  border-radius: 999px;
+}
+
+@media (max-width: 980px) {
+  .social-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 520px) {
-  .testimoni-grid {
+@media (max-width: 600px) {
+  .social-grid {
     grid-template-columns: 1fr;
   }
 }
