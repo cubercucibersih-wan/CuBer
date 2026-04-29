@@ -316,3 +316,65 @@ h1 {
   .quick-info div { width: 100%; }
   .btn { width: 100%; }
 }
+
+
+/* Testimoni Pelanggan */
+.testimoni-section {
+  padding-top: 40px;
+}
+
+.testimoni-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.testimoni-card {
+  background: white;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 18px 44px rgba(8, 67, 120, 0.08);
+  border: 1px solid rgba(11, 116, 209, 0.08);
+  transition: 0.2s ease;
+}
+
+.testimoni-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 54px rgba(8, 67, 120, 0.13);
+}
+
+.testimoni-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  background: #eefaff;
+}
+
+.testimoni-card div {
+  padding: 22px;
+}
+
+.testimoni-card h3 {
+  color: var(--blue-dark);
+  font-size: 1.18rem;
+  margin-bottom: 10px;
+}
+
+.testimoni-card p {
+  color: var(--muted);
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+@media (max-width: 860px) {
+  .testimoni-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .testimoni-grid {
+    grid-template-columns: 1fr;
+  }
+}
