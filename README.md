@@ -37,6 +37,7 @@ Fail utama:
 - style.css
 - logo-cuber-cucibersih.png
 - README.md
+- Ebook.md
 
 Cara upload ke GitHub Pages:
 1. Extract ZIP.
