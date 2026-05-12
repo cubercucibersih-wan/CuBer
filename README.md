@@ -6,7 +6,7 @@ Fail utama:
 - index.html
 - style.css
 - logo-cuber-cucibersih.png
-- README.txt
+- README.md
 
 Cara upload ke GitHub Pages:
 1. Extract ZIP.
